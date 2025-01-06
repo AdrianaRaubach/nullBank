@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --slate-50-color: #F8FAFC;
+    --slate-200-color: #E2E8F0;
+    --slate-400-color: #94A3B8;
+    --slate-500-color: #64748B;
+    --primary-100-color: #F3F2FF;
+    --primary-200-color: #EEE5FF;
+    --primary-500-color: #6729FF;
+
+  }
+html {
+    font-family: "Poppins", serif;
+}
+/* header */
+.header {
+    display: flex;
+    padding: 20px 64px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--slate-200-color);
+    font-size: 16px;
+    align-items: center;
+}
+.header a {
+    color: var(--slate-400-color);
+}
+.nav {
+    display: flex;
+    gap: 35px;
+    font-weight: 500;
+}
+.nav a:hover {
+    color: var(--slate-500-color);
+}
+.access .register:hover {
+    color: var(--slate-500-color);
+}
+.access a {
+    font-weight: 600;
+    padding: 8px 35px;
+}
+.login {
+    background-color: var(--primary-500-color);
+    border-radius: 8px;
+    color: #FFFFFF!important;
+}
+#logo a{
+    color: var(--primary-500-color);
+    font-family: "Outfit", serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .nav {
+        display: none;
+    }
+}
+
+.active {
+    color: var(--primary-500-color)!important;
+}
