@@ -17,6 +17,7 @@ html {
 /* header */
 .header {
     display: flex;
+    flex-direction: row;
     padding: 16px 64px;
     justify-content: space-between;
     border-bottom: 1px solid var(--slate-200-color);
@@ -33,6 +34,18 @@ html {
     display: flex;
     gap: 35px;
     font-weight: 500;
+}
+.nav-icon img {
+    width: 35px;
+}
+.nav-icon {
+    position: absolute;
+    right: 64px;
+    display: none;
+    background-color: var(--primary-200-color);
+    border: none;
+    padding: 3px;
+    border-radius: 8px;
 }
 .nav a:hover , .access .register:hover{
     color: var(--slate-500-color);
@@ -54,9 +67,27 @@ html {
 }
 
 @media (max-width: 1024px) {
-    .nav {
-        display: none;
+    
+    .nav-icon {
+        display: flex;
     }
+    .header {
+        flex-direction: column;
+        align-items: start;
+    }
+    .nav, .access {
+        display: none;
+        align-items: start;
+        flex-direction: column;
+        align-content: flex-start;
+        margin-top: 15px;
+        border-top: 1px solid var(--slate-200-color);
+    }
+}
+
+.nav-active {
+    display: flex!important;
+    
 }
 
 .active {
