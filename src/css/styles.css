@@ -5,6 +5,7 @@
     --slate-200-color: #E2E8F0;
     --slate-400-color: #94A3B8;
     --slate-500-color: #64748B;
+    --slate-600-color: #475569;
     --primary-100-color: #F3F2FF;
     --primary-200-color: #EEE5FF;
     --primary-500-color: #6729FF;
@@ -16,11 +17,14 @@ html {
 /* header */
 .header {
     display: flex;
-    padding: 20px 64px;
+    padding: 16px 64px;
     justify-content: space-between;
     border-bottom: 1px solid var(--slate-200-color);
     font-size: 16px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #FFF;
 }
 .header a {
     color: var(--slate-400-color);
@@ -30,10 +34,7 @@ html {
     gap: 35px;
     font-weight: 500;
 }
-.nav a:hover {
-    color: var(--slate-500-color);
-}
-.access .register:hover {
+.nav a:hover , .access .register:hover{
     color: var(--slate-500-color);
 }
 .access a {
@@ -60,4 +61,178 @@ html {
 
 .active {
     color: var(--primary-500-color)!important;
+}
+
+/* section presentation */
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+}
+.presentation-1 {
+    border-bottom: 1px solid var(--slate-200-color);
+    display: flex;
+    flex-direction: column;
+    color: var(--slate-500-color);
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.presentation-1, .presentation-2 {
+    padding: 88px 88px 0 88px;
+    flex: 1 0 49vw;
+}
+
+.options {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+}
+.main-text{
+    color: var(--slate-600-color);
+    font-family: "Outfit", serif;
+    font-size: 64px;
+    font-weight: 600;
+}
+.presentation-2 {
+    background-color: var(--primary-500-color);
+    display: flex;
+    justify-content: center;
+}
+.presentation-2 img {
+    max-width: 400px;
+}
+.clients {
+    margin: 23px 23px 45px 23px;
+    /* margin-bottom: 20px; */
+}
+.clients img, .clients p {
+    border-radius: 50%;
+    margin-left: -23px;
+    border: solid 3px #fff;
+    color: var(--slate-400-color);
+    font-size: 14px;
+}
+#user-icon{
+    background-color: var(--primary-200-color);
+    padding: 10.5px;
+}
+.open-account {
+    color: var(--primary-500-color);
+    background-color: var(--primary-200-color);
+    font-size: 16px;
+    padding: 12px 32px;
+    border-radius: 8px;
+
+}
+.find-more {
+    color: var(--slate-500-color);
+    font-size: 18px
+}
+.open-account , .find-more {
+    font-weight: 600;
+}
+
+hr {
+    border:1px solid var(--slate-200-color);
+}
+.absolute-item {
+    position: absolute;
+    background-color: #FFF;
+    color: var(--slate-600-color);
+    font-size: 14px;
+    font-weight: 450;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+.absolute-item img {
+    background-color: var(--primary-200-color);
+    padding: 8px;
+    border-radius: 6.83px;
+}
+.absolute-items {
+    position: absolute;
+    width: 50%;
+}
+@media (max-width: 1229px) {
+   
+    .absolute-items {
+        width: 100%;
+    }
+    .abs-item-1 {
+        right: 250px;
+        top: 95px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+    .abs-item-2 {
+        left: 250px;
+        top: 330px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+    .abs-item-3 {
+        right: 240px;
+        top: 460px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+}
+
+@media (min-width: 1230px) {
+   
+    .abs-item-1 {
+        right: 70px;
+        top: 110px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+    .abs-item-2 {
+        right: 320px;
+        top: 380px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+    .abs-item-3 {
+        right: 35px;
+        top: 520px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+}
+@media (min-width: 1440px) {
+   
+    .abs-item-1 {
+        right: 100px;
+        top: 95px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+    .abs-item-2 {
+        right: 420px;
+        top: 330px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+    .abs-item-3 {
+        right: 35px;
+        top: 460px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+}
+@media (min-width: 1700px) {
+   
+    .abs-item-1 {
+        right: 150px;
+        top: 95px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+    .abs-item-2 {
+        right: 470px;
+        top: 330px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+    .abs-item-3 {
+        right: 85px;
+        top: 460px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+}
+
+.app-demo {
+    align-self: flex-end;
 }

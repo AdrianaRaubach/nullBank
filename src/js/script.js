@@ -1,7 +1,5 @@
 // header
-let listItems = document.querySelectorAll("li a");
-
-console.log(listItems.length)
+let listItems = document.querySelectorAll("nav ul li a");
 
 for(let i = 0; i < listItems.length; i++) {
     listItems[i].addEventListener("click", function() { 
