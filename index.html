@@ -5,27 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/styles.css">
-    <title>NullBank</title>
+    <title>NullBank Início</title>
 </head>
 <body>
-    <header class="header">
-        <p id="logo"><a href="#">NullBank</a></p>
-        <nav>
-            <ul class="nav" class="display">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Para você</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="access">
-            <a href="#" class="register">Cadastrar-se</a>
-            <a href="#" class="login">Fazer Login</a>
-        </div>
-        <button class="nav-icon">
-            <img src="src/icons/menu.svg" alt="menu">
-        </button>
-    </header>
+    <header-component></header-component>
     <main class="container">
         <section class="presentation">
             <div class="presentation-1">
@@ -67,8 +50,10 @@
         </section>
         <section class="credit-cards">
             <div class="credit-column-1">
-                <h2>CARTÕES</h2>
-                <h3>Benefícios exclusivos do cartão <span>NullBank</span></h3>
+                <div>
+                    <h2>CARTÕES</h2>
+                    <h3>Benefícios exclusivos do cartão <span>NullBank</span></h3>
+                </div>
                 <p>Maximize seu poder de compra com os benefícios que você merece. Conquiste mais recompensas, descontos e praticidade no seu dia a dia.</p>
                 <a href="#">Ver mais informações <img src="src/icons/arrow-right.svg" alt="arrow"></a>
             </div>
@@ -124,12 +109,14 @@
                     </div>
                 </div>
                 <div class="app-column-2">
-                    <div>
-                        <h2>APP</h2>
-                        <h3>Controle total na palma da sua mão</h3>
+                    <div class="div-app">
+                        <div>
+                            <h2>APP</h2>
+                            <h3>Controle total na palma da sua mão</h3>
+                        </div>
                         <p>Tudo o que você precisa, em apenas um aplicativo. Crie uma conta, ative seu cartão e economize em tudo, desde mercearias até carros alugados.</p>
                     </div>
-                        <div class="information">
+                    <div class="information">
                         <div class="info">
                             <img src="src/icons/banknotew.svg" alt="banknote">
                             <div>
@@ -164,5 +151,6 @@
     </footer>
 
     <script type="module" src="src/js/script.js"></script>
+    <script type="module" src="header/component.js"></script>
 </body>
 </html>
