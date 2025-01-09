@@ -127,7 +127,7 @@ class Header extends HTMLElement {
         </style>
 
         <header class="header">
-            <p id="logo"><a href="#">NullBank</a></p>
+            <p id="logo"><a href="../index.html">NullBank</a></p>
             <nav>
                 <ul class="nav" class="display">
                     <li><a id="index" href="../index.html">Início</a></li>

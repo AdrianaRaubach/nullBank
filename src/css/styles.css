@@ -386,20 +386,53 @@ hr {
     flex-direction: column;
     gap: 16px;
 }
-
-/* cabeçalho */
-.header-frame {
-    margin: 0;
-    width: 100%;
-    height: 72px;
-    border: none;
-    border-bottom: 1px solid var(--slate-200-color);
-    position: sticky;
-    top: 0;
+.app-2 .column-1-app-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 0.5 1 536px;
+    padding: 30px 0px 60px 0px;
+}
+.app-2 {
+    display: flex;
+    color: #FFF;
+    background-color: var(--primary-500-color);
+    padding: 88px 88px 0px 88px;
+    justify-content: space-between;
+}
+.app-2 .column-2-app-2 {
+    display: flex;
+}
+.app-2 .column-2-app-2 img {
+    align-self: flex-end;
+}
+.app-2 .column-2-app-2 .image-1-app-2 {
+    margin-right: -200px;
     z-index: 100;
 }
-@media (max-width: 1024px) {
-    .header-frame {
-        height: 200px;
-    }
+.column-1-app-2 .btn {
+    display: flex;
+    gap: 25px;
+    padding: 20px 0px;
+}
+.column-1-app-2 a div {
+    background-color: var(--primary-100-color);
+    display: flex;
+    gap: 10px;
+    width: 155px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--primary-500-color);    
+}
+.app-2 h3 {
+    font-family: "Outfit", serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+.app-2 .column-1-app-2 span {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
