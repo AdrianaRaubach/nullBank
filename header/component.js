@@ -130,10 +130,10 @@ class Header extends HTMLElement {
             <p id="logo"><a href="#">NullBank</a></p>
             <nav>
                 <ul class="nav" class="display">
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="#">Para você</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="../contact/contact.html">Contato</a></li>
+                    <li><a id="index" href="../index.html">Início</a></li>
+                    <li><a id="for-you" href="#">Para você</a></li>
+                    <li><a id="services" href="#">Serviços</a></li>
+                    <li><a id="contact" href="../contact/contact.html">Contato</a></li>
                 </ul>
             </nav>
             <div class="access">
@@ -148,16 +148,18 @@ class Header extends HTMLElement {
     }
 
     addInteractions() {
+
         let listItems = document.querySelectorAll("nav ul li a");
 
         for(let i = 0; i < listItems.length; i++) {
-            listItems[i].addEventListener("click", function() { 
-                const itemActive = document.querySelector('.active')
-                if (itemActive) {
-                    itemActive.classList.remove('active');
+            window.addEventListener("load", function() { 
+                const urlString = window.location.href;
+                const nameItem = listItems[i].id
+
+                if(urlString.includes(nameItem)) {
+                    listItems[i].classList.add('active')
                 }
-                listItems[i].classList.add('active')
-            })
+            })  
         }
 
         let navIcon = document.querySelectorAll("button img");
@@ -165,6 +167,7 @@ class Header extends HTMLElement {
             let nav = document.querySelectorAll("header ul");
             let access = document.querySelectorAll("header div");
             const navActive = document.querySelector('.nav-active')
+            
                 if (navActive) {
                     nav[0].classList.remove('nav-active');
                     access[0].classList.remove('nav-active');

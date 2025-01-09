@@ -1,14 +1,16 @@
 let listItems = document.querySelectorAll("nav ul li a");
 
 for(let i = 0; i < listItems.length; i++) {
-    listItems[i].addEventListener("click", function() { 
-        const itemActive = document.querySelector('.active')
-        if (itemActive) {
-            itemActive.classList.remove('active');
+    window.addEventListener("load", function() { 
+        const urlString = window.location.href;
+        const nameItem = listItems[i].id
+
+        if(urlString.includes(nameItem)) {
+            listItems[i].classList.add('active')
         }
-        listItems[i].classList.add('active')
-    })
+    })  
 }
+
 
 let navIcon = document.querySelectorAll("button img");
 navIcon[0].addEventListener("click", function(){
@@ -23,3 +25,4 @@ navIcon[0].addEventListener("click", function(){
             access[0].classList.add('nav-active')
         }
 })
+
