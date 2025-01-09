@@ -160,10 +160,10 @@ class Footer extends HTMLElement {
                         <p><span>Newsletter</span></p>
                         <p>Receba novidades e dicas financeiras diretamente no seu email</p>
                         </div>
-                    <div class="inputs">
-                        <input type="email" placeholder="email@exemplo.com" class="in-email">
-                        <input type="submit" value="" class="in-submit">
-                    </div>
+                    <form class="inputs">
+                        <input for="email" type="email" placeholder="email@exemplo.com" class="in-email">
+                        <input type="submit" value="" id="email" class="in-submit">
+                    </form>
                     <div class="social-media">
                         <img src="../src/icons/facebook.svg" alt="facebook">
                         <img src="../src/icons/twitter.svg" alt="twitter">

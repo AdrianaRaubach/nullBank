@@ -14,22 +14,6 @@
 html {
     font-family: "Poppins", serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-    --slate-50-color: #F8FAFC;
-    --slate-200-color: #E2E8F0;
-    --slate-400-color: #94A3B8;
-    --slate-500-color: #64748B;
-    --slate-600-color: #475569;
-    --primary-100-color: #F3F2FF;
-    --primary-200-color: #EEE5FF;
-    --primary-500-color: #6729FF;
-
-  }
-html {
-    font-family: "Poppins", serif;
-}
 /* section presentation */
 .presentation {
     display: flex;
@@ -42,10 +26,13 @@ html {
     color: var(--slate-500-color);
     justify-content: space-evenly;
     gap: 20px;
+    flex: 1 0 49vw;
 }
 .presentation-1, .presentation-2 {
-    padding: 88px 88px 0 88px;
-    flex: 1 0 49vw;
+    padding: 88px 112px 0 112px;
+}
+.presentation-2 {
+    flex: 1 0 48vw;
 }
 
 .options {
@@ -214,7 +201,7 @@ hr {
 .credit-cards {
     display: flex;
     flex-direction: row;
-    padding: 88px 88px 0 88px;
+    padding: 112px 112px 0 112px;
     gap: 60px;
     color: var(--slate-500-color);
 }
@@ -287,7 +274,8 @@ hr {
     background-color: var(--primary-100-color);
     display: flex;
     flex-direction: row;
-    gap:30px
+    gap:30px;
+    padding-bottom: 0;
 }
 .align-rectangles{
     display: flex;
@@ -296,32 +284,33 @@ hr {
 .rectangles {
     display: flex;
     align-self: flex-end;
+    overflow: hidden;
 }
 .rectangle {
-    width:164px;
+    width:285px;
     height: 120px;
     border-radius: 8px 8px 0px 0;
-    margin-top: 40px;
-    margin-bottom: -40px;
+    margin-bottom: -30px;
+    align-self: flex-end;
+    transform: rotate(3deg);
 }
 .rectangle-1 {
-    transform: rotate(2.5deg);
     background-color: #FFF;
-    margin-right: -60px;
+    margin-right: -20px;
     margin-top: 60px;
 
 }
 .rectangle-2 {
-    transform: rotate(2.5deg);
     background-color: var(--primary-500-color);
-    margin-right: 15px;
+    margin-right: 10px;
+    height: 135px;
 }
 
 /* section 3 */
 .app-1 {
     display: flex;
     justify-content: space-around;
-    padding: 88px;
+    padding: 112px;
 }
 .information .info img{
     background-color: var(--primary-500-color);
@@ -397,7 +386,7 @@ hr {
     display: flex;
     color: #FFF;
     background-color: var(--primary-500-color);
-    padding: 88px 88px 0px 88px;
+    padding: 112px 112px 0px 112px;
     justify-content: space-between;
 }
 .app-2 .column-2-app-2 {
@@ -408,7 +397,7 @@ hr {
 }
 .app-2 .column-2-app-2 .image-1-app-2 {
     margin-right: -200px;
-    z-index: 100;
+    z-index: 80;
 }
 .column-1-app-2 .btn {
     display: flex;
@@ -435,4 +424,28 @@ hr {
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 2px;
+}
+.create-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 150%), url(../images/Rectangle\ 3603.png);
+    background-size: cover;
+    height: 496px;
+    background-position: center;
+}
+.create-account h4 {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 96px;
+    font-family: "Outfit", serif;
+}
+.create-account-btn {
+    background-color: var(--primary-500-color);
+    border-radius: 8px;
+    padding: 10px 32px;
+    width: 182px;
+    font-weight: 500;
+    color: #FFFFFF;
 }

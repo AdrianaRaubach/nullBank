@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --slate-50-color: #F8FAFC;
+    --slate-200-color: #E2E8F0;
+    --slate-400-color: #94A3B8;
+    --slate-500-color: #64748B;
+    --slate-600-color: #475569;
+    --primary-100-color: #F3F2FF;
+    --primary-200-color: #EEE5FF;
+    --primary-500-color: #6729FF;
+
+  }
+html {
+    font-family: "Poppins", serif;
+}
+.section-1-contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 64px 112px;
+    background-color: var(--primary-500-color);
+    color: #FFFFFF;
+    gap: 16px;
+    
+}
+.section-1-contact h4 {
+    font-family: "Outfit", serif;
+    font-size: 64px;
+    font-weight: 600;
+    width: 65vw;
+}
+.section-1-contact p {
+    max-width: 416px;
+}
+.contacts-sections {
+    display: flex;
+    padding: 64px 104px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-200-color);
+    margin: 0px 112px;
+    gap: 97px;
+}
+.talk-to-us {
+    align-self: flex-start;
+}
+.contacts-sections p {
+    font-size: 14px;
+    color: var(--slate-500-color);
+}
+.contacts-sections h3 {
+    font-family: "Outfit", serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--slate-600-color);
+    margin-bottom: 15px;
+}
+
+.contacts-column-1 {
+    display: flex;
+    align-items: flex-start;
+    flex: 0.5 0.5 318px;
+    gap: 20px;
+} 
+.contacts-column-2 p {
+    color: var(--slate-600-color);
+} 
+.contacts-column-2 span {
+    color: var(--slate-400-color);
+} 
+
+.icons-social {
+    display: flex;
+    gap: 20px;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 593px;
+    color: var(--slate-600-color);
+    font-family: "Outfit", serif;
+    font-size: 16px;
+    justify-content: space-evenly;
+    gap: 20px;
+    /* align-items: center; */
+}
+
+form fieldset .items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+form fieldset .full-name .items {
+    width: 47%;
+}
+
+
+form fieldset .full-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+form fieldset input, #message{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--slate-200-color)
+}
+
+form fieldset .btn-submit {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary-500-color);
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: large;
+    width: 215px;
+    align-self: flex-end;
+}
+form fieldset #message {
+    height: 250px;
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.create-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 150%), url(../src/images/Rectangle\ 3603.png);
+    background-size: cover;
+    height: 496px;
+    background-position: center;
+}
+.create-account h4 {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 96px;
+    font-family: "Outfit", serif;
+}
+.create-account-btn {
+    background-color: var(--primary-500-color);
+    border-radius: 8px;
+    padding: 10px 32px;
+    width: 182px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
