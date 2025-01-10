@@ -37,10 +37,10 @@
                     </div>
                 </div>
                 <div class="icons-social">
-                    <img src="../src/icons/facebook.svg" alt="facebook">
-                    <img src="../src/icons/twitter.svg" alt="twitter">
-                    <img src="../src/icons/linkedin.svg" alt="linkedin">
-                    <img src="../src/icons/instagram.svg" alt="instagram">
+                    <a href="https://www.facebook.com/"><img src="../src/icons/facebook.svg" alt="facebook"></a>
+                    <a href="https://x.com/?mx=2"><img src="../src/icons/twitter.svg" alt="twitter"></a>
+                    <a href="https://www.linkedin.com/"><img src="../src/icons/linkedin.svg" alt="linkedin"></a>
+                    <a href="https://www.instagram.com/"><img src="../src/icons/instagram.svg" alt="instagram"></a>
                 </div>
             </div>
             <div class="contacts-sections">
@@ -52,28 +52,32 @@
                     </div>
                 </div>
                 <div>
-                    <form>
+                    <form id="form-1" novalidate>
                         <fieldset>
                             <div class="full-name">
                                 <div class="items">
                                     <label for="name">Nome</label>
-                                    <input type="text" id="name" required placeholder="Nullito">
+                                    <input type="text" id="name" placeholder="Nullito">
+                                    <span class="error-name">Nome deve conter apenas letras</span>
                                 </div>
                                 <div class="items">
                                     <label for="last-name">Sobrenome</label>
-                                    <input type="text" id="last-name" required placeholder="Da Silva">
+                                    <input type="text" id="last-name" placeholder="Da Silva">
+                                    <span class="error-last-name">Sobrenome deve conter apenas letras</span>
                                 </div>
                             </div>
                             <div class="items">
                                 <label for="email">E-mail</label>
-                                <input type="email" id="email" required placeholder="email@exemplo.com">
+                                <input type="email" id="email" placeholder="email@exemplo.com">
+                                <span class="error-email">Você precisa digitar um email válido</span>
                             </div>
                             <div class="items">
                                 <label for="message">Mensagem</label>
-                                <textarea name="message" id="message" required placeholder="email@exemplo.com"></textarea>
+                                <textarea name="message" id="message" class="message" placeholder="email@exemplo.com"></textarea>
+                                <span class="error-message">Mensagem deve conter pelo menos 20 cacteres</span>
                             </div>
                           
-                            <input type="submit" class="btn-submit" value="Enviar mensagem">
+                            <input type="submit" id="submit-btn" class="btn-submit" value="Enviar mensagem">
                         </fieldset>
                     </form>
                 </div>
@@ -84,13 +88,11 @@
             <h4>Venha ser nulo<br>você também</h4>
             <a href="#" class="create-account-btn">Crie sua conta</a>
         </section>
-
-        
     </main>
     
     <footer-component></footer-component>
 
-    <script type="module" src="../src/js/script.js"></script>
+    <script type="module" src="script.js"></script>
     <script type="module" src="../header/component.js"></script>
     <script type="module" src="../footer/component.js"></script>
 </body>

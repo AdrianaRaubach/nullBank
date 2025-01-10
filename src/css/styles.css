@@ -17,7 +17,7 @@ html {
 /* section presentation */
 .presentation {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .presentation-1 {
     border-bottom: 1px solid var(--slate-200-color);
@@ -28,11 +28,12 @@ html {
     gap: 20px;
     flex: 1 0 49vw;
 }
-.presentation-1, .presentation-2 {
-    padding: 88px 112px 0 112px;
+.presentation-1 {
+    padding: 88px 90px 0 112px;
 }
 .presentation-2 {
-    flex: 1 0 48vw;
+    flex: 1 0 50vw;
+    padding: 88px 110px 0 110px;
 }
 
 .options {
@@ -227,6 +228,10 @@ hr {
 }
 .credit-cards span {
     font-weight: 600;
+    font-family: "Outfit", serif;
+}
+.card-benefits span {
+    font-size: 20px;
 }
 .credit-cards h2 {
     font-size: 16px;
@@ -347,6 +352,15 @@ hr {
     display: flex;
     gap: 20px;
     align-items: start;
+}
+.app-1 .information .info span {
+    color: var(--primary-500-color);
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Outfit", serif;
+}
+.app-1 .information .info p {
+    color: var(--slate-500-color);
 }
 .app-1 .app-column-1 .rectangle-app {
     height: 363px;

@@ -84,7 +84,6 @@ form fieldset {
     font-size: 16px;
     justify-content: space-evenly;
     gap: 20px;
-    /* align-items: center; */
 }
 
 form fieldset .items {
@@ -96,45 +95,60 @@ form fieldset .full-name .items {
     width: 47%;
 }
 
-
 form fieldset .full-name {
     display: flex;
     justify-content: space-between;
 }
 
-
-form fieldset input, #message{
+form fieldset input, .message{
     padding: 10px;
     border-radius: 8px;
     border: 1px solid var(--slate-200-color)
 }
 
 form fieldset .btn-submit {
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
     border: none;
     background-color: var(--primary-500-color);
     color: #FFFFFF;
-    font-weight: 500;
-    font-size: large;
+    font-weight: 600;
+    font-size: 16px;
     width: 215px;
     align-self: flex-end;
+    background-image: url(../src/icons/arrow-rightW.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 175px;
+    text-align: justify;
+    padding-left: 20px;
+    cursor:pointer;
 }
-form fieldset #message {
+
+form fieldset .message {
     height: 250px;
     resize: none;
 }
 
-
-
-
-
-
-
-
-
-
-
+form fieldset input::placeholder, form fieldset textarea::placeholder {
+    color: var(--slate-400-color);
+    font-family: "Poppins", serif;
+    font-size: 14px;
+}
+form fieldset input, form fieldset textarea {
+    outline: none;
+    font-family: "Poppins", serif;
+    font-size: 12px;
+}
+.error-name, .error-last-name, .error-email, .error-message{
+    display: none;
+}
+.error-class {
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+}
 .create-account {
     display: flex;
     flex-direction: column;
@@ -158,4 +172,12 @@ form fieldset #message {
     width: 182px;
     font-weight: 500;
     color: #FFFFFF;
+}
+
+.class-form-validade-false {
+    border:1.5px solid red;
+}
+
+.class-form-validade-true {
+    border:1.5px solid var(--primary-500-color);
 }

@@ -131,14 +131,14 @@ class Header extends HTMLElement {
             <nav>
                 <ul class="nav" class="display">
                     <li><a id="index" href="../index.html">Início</a></li>
-                    <li><a id="for-you" href="#">Para você</a></li>
-                    <li><a id="services" href="#">Serviços</a></li>
+                    <li><a id="for-you" href="../404/error.html">Para você</a></li>
+                    <li><a id="services" href="../404/error.html">Serviços</a></li>
                     <li><a id="contact" href="../contact/contact.html">Contato</a></li>
                 </ul>
             </nav>
             <div class="access">
-                <a href="#" class="register">Cadastrar-se</a>
-                <a href="#" class="login">Fazer Login</a>
+                <a href="../404/error.html" class="register">Cadastrar-se</a>
+                <a href="../404/error.html" class="login">Fazer Login</a>
             </div>
             <button class="nav-icon">
                 <img src="../src/icons/menu.svg" alt="menu">

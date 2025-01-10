@@ -11,3 +11,6 @@ a {
 form fieldset{
     border: none;
 }
+body {
+    width: 100%;
+}

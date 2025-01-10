@@ -120,9 +120,33 @@ class Footer extends HTMLElement {
                 font-size: 24px;
                 font-weight: 700;
             }
+            .section-2 a p {
+                color: var(--slate-400-color);
+            }
             .sec-2 {
                 display: flex;
                 gap: 70px;
+            }
+            form input::placeholder {
+                color: var(--slate-400-color);
+                font-family: "Poppins", serif;
+                font-size: 14px;
+            }
+            .class-form-validade-false {
+                border:1.5px solid red;
+            }
+
+            .class-form-validade-true {
+                border:1.5px solid var(--primary-500-color);
+            }
+            form input {
+                outline: none
+            }
+            .information a p:hover {
+                color: var(--slate-500-color);
+            }
+            #email {
+                cursor: pointer;
             }
          
         </style>
@@ -132,27 +156,27 @@ class Footer extends HTMLElement {
                 <div class="information">
                     <div>
                         <p><span>Para você</span></p>
-                        <p>Contas pessoais</p>
-                        <p>Empréstimos</p>
-                        <p>Investimentos</p>
+                        <a href="../404/error.html"><p>Contas pessoais</p></a>
+                        <a href="../404/error.html"><p>Empréstimos</p></a>
+                        <a href="../404/error.html"><p>Investimentos</p></a>
                     </div>
                     <div>
                         <p><span>Nullbank</span></p>
-                        <p>Sobre nós</p>
-                        <p>Nossa missão</p>
-                        <p>Blog</p>
+                        <a href="../404/error.html"><p>Sobre nós</p></a>
+                        <a href="../404/error.html"><p>Nossa missão</p></a>
+                        <a href="../404/error.html"><p>Blog</p></a>
                     </div>
                     <div>
                         <p><span>Serviços</span></p>
-                        <p>Conta digital</p>
-                        <p>Pix e transferências</p>
-                        <p>Pagamentos online</p>
+                        <a href="../404/error.html"><p>Conta digital</p></a>
+                        <a href="../404/error.html"><p>Pix e transferências</p></a>
+                        <a href="../404/error.html"><p>Pagamentos online</p></a>
                     </div>
                     <div>
                         <p><span>Suporte</span></p>
-                        <p>Central de ajuda</p>
-                        <p>Fale conosco</p>
-                        <p>Perguntas frequentes</p>
+                        <a href="../404/error.html"><p>Central de ajuda</p></a>
+                        <a href="../404/error.html"><p>Fale conosco</p></a>
+                        <a href="../404/error.html"><p>Perguntas frequentes</p></a>
                     </div>
                 </div>
                 <div class="newsletter">
@@ -161,23 +185,23 @@ class Footer extends HTMLElement {
                         <p>Receba novidades e dicas financeiras diretamente no seu email</p>
                         </div>
                     <form class="inputs">
-                        <input for="email" type="email" placeholder="email@exemplo.com" class="in-email">
+                        <input for="email" type="email" placeholder="email@exemplo.com" id="input-email" class="in-email">
                         <input type="submit" value="" id="email" class="in-submit">
                     </form>
                     <div class="social-media">
-                        <img src="../src/icons/facebook.svg" alt="facebook">
-                        <img src="../src/icons/twitter.svg" alt="twitter">
-                        <img src="../src/icons/linkedin.svg" alt="linkedin">
-                        <img src="../src/icons/instagram.svg" alt="instagram">
+                        <a href="https://www.facebook.com/"><img src="../src/icons/facebook.svg" alt="facebook"></a>
+                        <a href="https://x.com/?mx=2"><img src="../src/icons/twitter.svg" alt="twitter"></a>
+                        <a href="https://www.linkedin.com/"><img src="../src/icons/linkedin.svg" alt="linkedin"></a>
+                        <a href="https://www.instagram.com/"><img src="../src/icons/instagram.svg" alt="instagram"></a>
                     </div>
                 </div>
             </div>
             <div class="section-2">
                 <p>© 2024 NullBank. Todos os direitos reservados.</p>
-                <p><span>NullBank</span></p>
+                <a href="../index.html"><p><span>NullBank</span></p></a>
                 <div class="sec-2">
-                    <p>Política de Privacidade</p>
-                    <p>Termos de Uso</p>
+                    <a href="../404/error.html"><p>Política de Privacidade</p></a>
+                    <a href="../404/error.html"><p>Termos de Uso</p></a>
                 </div>
             </div>
         </footer>
@@ -185,7 +209,28 @@ class Footer extends HTMLElement {
     }
 
     addInteractions() {
+        const emailIn = document.getElementById("input-email")
+        const inputs = document.getElementsByClassName("inputs")
         
+        emailIn.addEventListener("input", function() {
+
+            const regexEmail = /\w+@\w+\.\w+/;
+            const valueInput = emailIn.value
+            const testName = regexEmail.test(valueInput)
+
+            validateInfos(inputs[0], testName) 
+        })
+
+        function validateInfos(item, boolean) {
+
+            if (boolean) {
+                item.classList.remove('class-form-validade-false');
+                item.classList.add('class-form-validade-true');
+            } else {
+                item.classList.remove('class-form-validade-true');
+                item.classList.add('class-form-validade-false');
+            }  
+        }
     }
   }
   
