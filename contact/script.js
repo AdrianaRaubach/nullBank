@@ -65,8 +65,18 @@ form1.addEventListener("submit", function(event) {
     
     })
     if(validationPassed) {
+        if (localStorage.cont) {
+            localStorage.cont = Number(localStorage.cont)+1;
+        } else {
+            localStorage.cont = 1;
+        }
+            localStorage.setItem("id_Client_" + localStorage.cont + " Name:", nameIn.value)
+            localStorage.setItem("id_Client_" + localStorage.cont + " Last Name: ", lastNameIn.value)
+            localStorage.setItem("id_Client_" + localStorage.cont + " Email: ", emailIn.value)
+            localStorage.setItem("id_Client_" + localStorage.cont + " Message: ", messageIn.value)
+        
         this.submit()
-    } 
+        } 
 })
 
 nameIn.addEventListener("input", function(){

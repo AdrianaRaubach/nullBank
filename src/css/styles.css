@@ -17,7 +17,7 @@ html {
 /* section presentation */
 .presentation {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 .presentation-1 {
     border-bottom: 1px solid var(--slate-200-color);
@@ -202,20 +202,27 @@ hr {
 .credit-cards {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    flex: 1 1 100%;
     padding: 112px 112px 0 112px;
     gap: 60px;
     color: var(--slate-500-color);
+    flex-wrap: wrap;
 }
 .credit-cards .credit-column-1 {
     display: flex;
     flex-direction: column;
-    flex: 0 0 435px;
+    width: 420px;
     gap: 16px;
+    /* align-self: flex-start; */
 }
 .credit-cards .credit-column-2 {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    width: 60%;
+    min-width: 30%;
+    max-width: 70%;
 }
 .credit-column-1 a {
     display: flex;
@@ -226,12 +233,18 @@ hr {
 .credit-cards span , .credit-cards a, .credit-cards .credit-column-1 h2{
     color: var(--primary-500-color);
 }
-.credit-cards span {
-    font-weight: 600;
+.credit-cards h3 span {
+    font-weight: 700;
     font-family: "Outfit", serif;
 }
 .card-benefits span {
     font-size: 20px;
+    font-family: "Outfit", serif;
+    font-weight: 600;
+}
+.card-benefits p {
+    font-size: 14px;
+
 }
 .credit-cards h2 {
     font-size: 16px;
@@ -239,7 +252,8 @@ hr {
 }
 .credit-cards h3 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: "Outfit", serif;
 }
 .credit-cards h3, .credit-cards .b5 p{
     color: var(--slate-600-color);
@@ -250,11 +264,10 @@ hr {
     border-radius: 8px;
 }
 .b1 , .b4 {
-    flex: 1 1 395px;
-
+    flex: 1 1 50%;
 }
 .b2 , .b3 {
-    flex: 1 1 330px;
+    flex: 1 1 40%;
 }
 .b5 {
     width: 100%;
@@ -293,6 +306,7 @@ hr {
 }
 .rectangle {
     width:285px;
+    max-width: 285px;
     height: 120px;
     border-radius: 8px 8px 0px 0;
     margin-bottom: -30px;
@@ -314,6 +328,7 @@ hr {
 /* section 3 */
 .app-1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 112px;
 }
@@ -398,6 +413,7 @@ hr {
 }
 .app-2 {
     display: flex;
+    flex-wrap: wrap;
     color: #FFF;
     background-color: var(--primary-500-color);
     padding: 112px 112px 0px 112px;
