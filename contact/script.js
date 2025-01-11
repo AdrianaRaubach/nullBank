@@ -7,7 +7,6 @@ const errorLastName = document.getElementsByClassName("error-last-name")
 const errorEmail = document.getElementsByClassName("error-email")
 const errorMessage = document.getElementsByClassName("error-message")
 const errorName = document.getElementsByClassName("error-name")
-
 const listItems = [nameIn, lastNameIn, emailIn, messageIn]
 
 nameIn.addEventListener("input", function(){
@@ -15,7 +14,7 @@ nameIn.addEventListener("input", function(){
     const valueInput = nameIn.value
     const testName = regexName.test(valueInput)
 
-    validateInfos(nameIn, valueInput.length >= 3 && testName, errorName) 
+    validateInfos(nameIn, valueInput.length >= 3 && testName, errorName)
 })
 
 lastNameIn.addEventListener("input", function(){
@@ -68,4 +67,32 @@ form1.addEventListener("submit", function(event) {
     if(validationPassed) {
         this.submit()
     } 
+})
+
+nameIn.addEventListener("input", function(){
+    nameIn.value = (nameIn.value).toLowerCase()
+    const sep = " "
+    let formattedValue = ""
+    for(let i = 0; i < (nameIn.value).length; i++) {
+        if(i == 0 || nameIn.value[i-1] === sep) {
+            formattedValue += nameIn.value[i].toUpperCase()
+        } else {
+            formattedValue += nameIn.value[i]
+        } 
+    }
+    nameIn.value = formattedValue
+})
+
+lastNameIn.addEventListener("input", function(){
+    lastNameIn.value = (lastNameIn.value).toLowerCase()
+    const sep = " "
+    let formattedValue = ""
+    for(let i = 0; i < (lastNameIn.value).length; i++) {
+        if(i == 0 || lastNameIn.value[i-1] === sep) {
+            formattedValue += lastNameIn.value[i].toUpperCase()
+        } else {
+            formattedValue += lastNameIn.value[i]
+        } 
+    }
+    lastNameIn.value = formattedValue
 })
