@@ -10,7 +10,7 @@
     --primary-200-color: #EEE5FF;
     --primary-500-color: #6729FF;
 
-  }
+}
 html {
     font-family: "Poppins", serif;
 }
@@ -29,11 +29,11 @@ html {
     flex: 1 0 49vw;
 }
 .presentation-1 {
-    padding: 88px 90px 0 112px;
+    padding: 6% 6% 0 8%;
 }
 .presentation-2 {
     flex: 1 0 50vw;
-    padding: 88px 110px 0 110px;
+    padding: 88px 8% 0 8%;
 }
 
 .options {
@@ -49,9 +49,6 @@ html {
     font-weight: 600;
 }
 @media (max-width: 768px) {
-    .presentation-1, .presentation-2 {
-        padding: 50px 50px 0 50px;
-    }
     .main-text {
         font-size: 50px;
     }
@@ -82,7 +79,7 @@ html {
     color: var(--primary-500-color);
     background-color: var(--primary-200-color);
     font-size: 16px;
-    padding: 12px 32px;
+    padding: 8px 32px;
     border-radius: 8px;
 
 }
@@ -107,7 +104,8 @@ hr {
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 10px
+    gap: 10px;
+    flex: 0 0 auto;
 }
 .absolute-item img {
     background-color: var(--primary-200-color);
@@ -118,6 +116,19 @@ hr {
     position: absolute;
     width: 50%;
 }
+.abs-item-1 {
+    right: 70px;
+    top: 90px;
+}
+.abs-item-2 {
+    right: 400px;
+    top: 330px;
+    width: 284px;
+}
+.abs-item-3 {
+    right: 35px;
+    top: 460px;
+}
 @media (max-width: 1229px) {
    
     .absolute-items {
@@ -125,18 +136,92 @@ hr {
     }
     .abs-item-1 {
         right: 250px;
-        top: 95px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
     }
     .abs-item-2 {
         left: 250px;
-        top: 330px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
     }
     .abs-item-3 {
         right: 240px;
-        top: 460px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    }
+}
+@media (max-width: 1024px) {
+
+    .abs-item-1 {
+        right: 190px;
+    }
+    .abs-item-2 {
+        left: 190px;
+    }
+    .abs-item-3 {
+        right: 180px;
+    }
+}
+@media (max-width: 900px) {
+   
+    .abs-item-1 {
+        right: 160px;
+    }
+    .abs-item-2 {
+        left: 160px;
+    }
+    .abs-item-3 {
+        right: 150px;
+    }
+}
+@media (max-width: 768px) {   
+    .abs-item-1 {
+        right: 100px;
+        top: 70px;
+    }
+    .abs-item-2 {
+        left: 100px;
+        top: 270px;
+    }
+    .abs-item-3 {
+        right: 90px;
+        top: 410px;
+    }
+}
+@media (max-width: 610px) {   
+    .abs-item-1 {
+        right: 60px;
+        top: 60px;
+    }
+    .abs-item-2 {
+        left: 60px;
+        top: 210px;
+    }
+    .abs-item-3 {
+        right: 50px;
+        top: 360px;
+    }
+}
+@media (max-width: 540px) {   
+    .abs-item-1 {
+        right: 40px;
+        top: 50px;
+    }
+    .abs-item-2 {
+        left: 40px;
+        top: 190px;
+    }
+    .abs-item-3 {
+        right: 30px;
+        top: 310px;
+    }
+}
+@media (max-width: 470px) {   
+    .abs-item-1 {
+        right: 20px;
+        top: 30px;
+    }
+    .abs-item-2 {
+        left: 20px;
+        top: 150px;
+    }
+    .abs-item-3 {
+        right: 10px;
+        top: 250px;
     }
 }
 
@@ -144,58 +229,44 @@ hr {
    
     .abs-item-1 {
         right: 70px;
-        top: 110px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
     }
     .abs-item-2 {
         right: 320px;
-        top: 380px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
     }
     .abs-item-3 {
         right: 35px;
-        top: 520px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
     }
 }
 @media (min-width: 1440px) {
    
     .abs-item-1 {
         right: 100px;
-        top: 95px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
     }
     .abs-item-2 {
         right: 420px;
-        top: 330px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
     }
     .abs-item-3 {
         right: 35px;
-        top: 460px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
     }
 }
 @media (min-width: 1700px) {
    
     .abs-item-1 {
         right: 150px;
-        top: 95px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
     }
     .abs-item-2 {
         right: 470px;
         top: 330px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
     }
     .abs-item-3 {
         right: 85px;
-        top: 460px;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
     }
 }
 .app-demo {
     align-self: flex-end;
+}
+.abs-item-1, .abs-item-2, .abs-item-3 {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
 }
 
 /* section-2 */
@@ -204,7 +275,7 @@ hr {
     flex-direction: row;
     justify-content: flex-start;
     flex: 1 1 100%;
-    padding: 112px 112px 0 112px;
+    padding: 112px 8% 0 8%;
     gap: 60px;
     color: var(--slate-500-color);
     flex-wrap: wrap;
@@ -221,8 +292,6 @@ hr {
     flex-wrap: wrap;
     gap: 16px;
     width: 60%;
-    min-width: 30%;
-    max-width: 70%;
 }
 .credit-column-1 a {
     display: flex;
@@ -328,9 +397,8 @@ hr {
 /* section 3 */
 .app-1 {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 112px;
+    padding: 8% 8% 8% 8%;
 }
 .information .info img{
     background-color: var(--primary-500-color);
@@ -413,10 +481,9 @@ hr {
 }
 .app-2 {
     display: flex;
-    flex-wrap: wrap;
     color: #FFF;
     background-color: var(--primary-500-color);
-    padding: 112px 112px 0px 112px;
+    padding: 88px 8% 0px 8%;
     justify-content: space-between;
 }
 .app-2 .column-2-app-2 {
@@ -448,7 +515,7 @@ hr {
 .app-2 h3 {
     font-family: "Outfit", serif;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .app-2 .column-1-app-2 span {
     font-weight: 600;
@@ -474,8 +541,73 @@ hr {
 .create-account-btn {
     background-color: var(--primary-500-color);
     border-radius: 8px;
-    padding: 10px 32px;
+    padding: 8px 32px;
     width: 182px;
     font-weight: 500;
     color: #FFFFFF;
+}
+
+@media (max-width: 1439px) {
+    .credit-cards {
+        flex-direction: column;
+    }
+    .credit-cards .credit-column-1, .credit-cards .credit-column-2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .app-1 {
+        flex-direction: column-reverse;
+    }
+    .app-1 .app-column-1, .app-1 .app-column-2 {
+        width: 100%;
+    }
+    .app-2 {
+        flex-direction: column;
+    }
+    .app-column-1 , .column-2-app-2 {
+        justify-content: center;
+    }
+    .app-2 .column-1-app-2 {
+        flex: 0.5 1 300px;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+     .create-account h4 {
+        font-size: 60px;
+    }
+}
+@media (max-width: 762px) {
+    .create-account h4 {
+       font-size: 50px;
+   }
+   .app-demo, .image-1-app-2, .image-2-app-2 {
+    width: 50vw;
+   }
+   .app-1 .app-column-1 {
+    height: 0;
+    margin-top: 100%;
+   }
+   .app-1 .app-column-1 .rectangle-app {
+    height: 48vw;
+    width: 75vw;
+}
+@media (max-width: 500px) {
+    .options {
+       flex-wrap: wrap;
+   }
+   .column-1-app-2 .btn {
+    flex-direction: column;
+    align-items: center;
+   }
+   .main-text {
+    font-size: 30px;
+   }
+   .credit-cards .credit-column-1 h3 , .app h3{
+    font-size: 30px;
+   }
+}
 }

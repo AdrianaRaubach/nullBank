@@ -58,7 +58,7 @@ form1.addEventListener("submit", function(event) {
     listItems.forEach(element => {
         let classNameEl = element.className
         if(!classNameEl.includes("class-form-validade-false") && !classNameEl.includes("class-form-validade-true")) {
-            validationNotPassed = false
+            validationPassed = false
         } else if(classNameEl.includes("class-form-validade-false")){
             validationPassed = false
         }
@@ -76,7 +76,7 @@ form1.addEventListener("submit", function(event) {
             localStorage.setItem("id_Client_" + localStorage.cont + " Message: ", messageIn.value)
         
         this.submit()
-        } 
+    } 
 })
 
 nameIn.addEventListener("input", function(){

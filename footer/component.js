@@ -62,7 +62,13 @@ class Footer extends HTMLElement {
             .section-1 .information div{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-evenly;
+                justify-content: space-between;
+            }
+            .information {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 20px
             }
             .information div p {
                 font-family: "Poppins", serif;
@@ -148,6 +154,52 @@ class Footer extends HTMLElement {
             #email {
                 cursor: pointer;
             }
+            .style-span p .span-message {
+                display: none;
+            }
+            .style-span p span {
+                color: red;
+                font-size: 12px;
+            }
+            
+             @media (max-width: 1024px) {
+                .footer .section-2 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                }
+                .newsletter {
+                    flex: 0 0 auto;
+                    padding: 20px;
+                    width: 280px;
+                }
+                .section-1 .information div {
+                    gap: 12px;
+                    padding: 0px 20px 20px 20px;
+                }
+                .section-1 .information {
+                    padding: 20px;
+                    justify-content: flex-start;
+                    flex: 0 0 auto;
+                    width: 50%;
+                }
+                
+                @media (max-width: 762px) {
+                .footer .section-1 {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+                .newsletter {
+                    flex: 0 0 auto;
+                    align-self: center;
+                }
+                .section-1 .information div {
+                    padding: 0px;
+                }
+                
+            }
          
         </style>
 
@@ -184,9 +236,12 @@ class Footer extends HTMLElement {
                         <p><span>Newsletter</span></p>
                         <p>Receba novidades e dicas financeiras diretamente no seu email</p>
                         </div>
-                    <form class="inputs">
-                        <input for="email" type="email" placeholder="email@exemplo.com" id="input-email" class="in-email">
-                        <input type="submit" value="" id="email" class="in-submit">
+                    <form novalidate class = "style-span" id= "form-2">
+                        <div class="inputs">
+                            <input for="email" type="email" placeholder="email@exemplo.com" id="input-email" class="in-email">
+                            <input type="submit" value="" id="email" class="in-submit">
+                        </div>
+                        <p><span class="error-email-newsletter span-message"> Você precisa digitar um email válido </span></p>
                     </form>
                     <div class="social-media">
                         <a href="https://www.facebook.com/"><img src="../src/icons/facebook.svg" alt="facebook"></a>
@@ -211,26 +266,55 @@ class Footer extends HTMLElement {
     addInteractions() {
         const emailIn = document.getElementById("input-email")
         const inputs = document.getElementsByClassName("inputs")
-        
+        const errorEmailNewsletter = document.getElementsByClassName("error-email-newsletter")
+        const errorEmailN = errorEmailNewsletter[0]
+        const form2 = document.getElementById("form-2") 
+
         emailIn.addEventListener("input", function() {
 
             const regexEmail = /\w+@\w+\.\w+/;
             const valueInput = emailIn.value
             const testName = regexEmail.test(valueInput)
 
-            validateInfos(inputs[0], testName) 
+            validateInfos(inputs[0], testName, errorEmailN) 
         })
 
-        function validateInfos(item, boolean) {
+        function validateInfos(item, boolean, error) {
 
             if (boolean) {
                 item.classList.remove('class-form-validade-false');
                 item.classList.add('class-form-validade-true');
+                error.classList.add('span-message');
+
             } else {
                 item.classList.remove('class-form-validade-true');
                 item.classList.add('class-form-validade-false');
+                error.classList.remove('span-message');
             }  
         }
+
+        form2.addEventListener("submit", function(event) {
+            event.preventDefault()
+            let validationPassed = true
+            let classNewsLetter = errorEmailN.classList.value   
+        
+            if(!classNewsLetter.includes("span-message") && !classNewsLetter.includes("span-message")) {
+                validationPassed = false
+            } else if(classNewsLetter.includes("span-message")){
+                validationPassed = true
+            }
+            
+            if(validationPassed && emailIn.value.length > 0) {
+                if (localStorage.cont) {
+                    localStorage.cont = Number(localStorage.cont)+1;
+                } else {
+                    localStorage.cont = 1;
+                }
+                localStorage.setItem("id_Client_" + localStorage.cont + " Newsletter - Email:", emailIn.value)
+                    
+                this.submit()
+            } 
+        })
     }
   }
   

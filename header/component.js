@@ -46,7 +46,7 @@ class Header extends HTMLElement {
             .header {
                 display: flex;
                 flex-direction: row;
-                padding: 16px 64px;
+                padding: 20px 64px;
                 justify-content: space-between;
                 border-bottom: 1px solid var(--slate-200-color);
                 font-size: 16px;

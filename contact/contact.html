@@ -43,7 +43,7 @@
                     <a href="https://www.instagram.com/"><img src="../src/icons/instagram.svg" alt="instagram"></a>
                 </div>
             </div>
-            <div class="contacts-sections">
+            <div class="contacts-sections section-form">
                 <div class="contacts-column-1 talk-to-us">
                     <img src="../src/icons/message-circle.svg" alt="message">
                     <div>
@@ -51,36 +51,33 @@
                         <p>Prefere enviar uma mensagem? Preencha o formulário abaixo e retornaremos o mais rápido possível.</p>
                     </div>
                 </div>
-                <div>
-                    <form id="form-1" novalidate>
-                        <fieldset>
-                            <div class="full-name">
-                                <div class="items">
-                                    <label for="name">Nome</label>
-                                    <input type="text" id="name" placeholder="Nullito">
-                                    <span class="error-name">Nome deve conter apenas letras</span>
-                                </div>
-                                <div class="items">
-                                    <label for="last-name">Sobrenome</label>
-                                    <input type="text" id="last-name" placeholder="Da Silva">
-                                    <span class="error-last-name">Sobrenome deve conter apenas letras</span>
-                                </div>
+                <form id="form-1" novalidate>
+                    <fieldset>
+                        <div class="full-name">
+                            <div class="items">
+                                <label for="nam e">Nome</label>
+                                <input type="text" id="name" placeholder="Nullito">
+                                <span class="error-name">Nome deve conter apenas letras</span>
                             </div>
                             <div class="items">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" placeholder="email@exemplo.com">
-                                <span class="error-email">Você precisa digitar um email válido</span>
+                                <label for="last-name">Sobrenome</label>
+                                <input type="text" id="last-name" placeholder="Da Silva">
+                                <span class="error-last-name">Sobrenome deve conter apenas letras</span>
                             </div>
-                            <div class="items">
-                                <label for="message">Mensagem</label>
-                                <textarea name="message" id="message" class="message" placeholder="email@exemplo.com"></textarea>
-                                <span class="error-message">Mensagem deve conter pelo menos 20 cacteres</span>
-                            </div>
-                          
-                            <input type="submit" id="submit-btn" class="btn-submit" value="Enviar mensagem">
-                        </fieldset>
-                    </form>
-                </div>
+                        </div>
+                        <div class="items">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="email@exemplo.com">
+                            <span class="error-email">Você precisa digitar um email válido</span>
+                        </div>
+                        <div class="items">
+                            <label for="message">Mensagem</label>
+                            <textarea name="message" id="message" class="message" placeholder="email@exemplo.com"></textarea>
+                            <span class="error-message">Mensagem deve conter pelo menos 20 cacteres</span>
+                        </div>
+                        <input type="submit" id="submit-btn" class="btn-submit" value="Enviar mensagem">
+                    </fieldset>
+                </form>
             </div>
         </section>
 
