@@ -190,7 +190,7 @@ form fieldset input, form fieldset textarea {
        width: 593px;
     }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1439px) {
     .section-form {
         justify-content: center;
     }
@@ -243,4 +243,34 @@ form fieldset input, form fieldset textarea {
     .section-1-contact h4 {
         font-size: 30px;
     }
+}
+
+.shipping-confirmation {
+    position: absolute;
+    height: 30vh;
+    width: 50vw;
+    background-color: var(--primary-500-color);
+    display: flex;
+    align-items: center;
+    left: 25%;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.219);
+    padding: 20px;
+}
+.shipping-confirmation p {
+    color: #FFF;
+    padding: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: "Outfit", serif;
+    text-align: center;
+}
+.shipping-confirmation-display {
+    display: none;
+}
+.email-client-message {
+    color: var(--primary-200-color);
+    font-size: 14px;
 }
