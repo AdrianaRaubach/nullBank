@@ -11,23 +11,6 @@ class Footer extends HTMLElement {
     renderFooter() {
       this.innerHTML = `
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-            :root {
-                --slate-50-color: #F8FAFC;
-                --slate-200-color: #E2E8F0;
-                --slate-400-color: #94A3B8;
-                --slate-500-color: #64748B;
-                --slate-600-color: #475569;
-                --primary-100-color: #F3F2FF;
-                --primary-200-color: #EEE5FF;
-                --primary-500-color: #6729FF;
-
-            }
-            html {
-                font-family: "Poppins", serif;
-            }
-
             .footer {
                 padding: 20px 0px;
             }
@@ -162,7 +145,7 @@ class Footer extends HTMLElement {
                 font-size: 12px;
             }
             
-             @media (max-width: 1024px) {
+            @media (max-width: 1024px) {
                 .footer .section-2 {
                     display: flex;
                     flex-direction: column;
@@ -185,7 +168,7 @@ class Footer extends HTMLElement {
                     width: 50%;
                 }
                 
-                @media (max-width: 762px) {
+            @media (max-width: 762px) {
                 .footer .section-1 {
                     display: flex;
                     flex-direction: column-reverse;
@@ -202,7 +185,10 @@ class Footer extends HTMLElement {
             }
          
         </style>
-
+        <head>
+            <link rel="stylesheet" href="../src/css/reset.css">
+            <link rel="stylesheet" href="../src/css/variables.css">
+        </head>
         <footer class="footer">
             <div class="section-1">
                 <div class="information">
@@ -318,4 +304,4 @@ class Footer extends HTMLElement {
     }
   }
   
-  customElements.define('footer-component', Footer);
+customElements.define('footer-component', Footer);
