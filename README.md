@@ -39,7 +39,7 @@ https://github.com/user-attachments/assets/9fb7b283-3146-4d7d-9919-4fb9c8540249
 
 ## 🛠️ Ferramentas
 
-#### O projeto foi desenvolvido utilizando apenas a famosa tríade do fontend
+#### O projeto foi desenvolvido utilizando apenas a famosa tríade do frontend
 
 - ### <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> HTML
 - ### <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> CSS 
