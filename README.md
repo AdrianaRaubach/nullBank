@@ -6,7 +6,7 @@
 
 > Este projeto foi criado como um desafio do Programa de bolsas da empresa Compass Uol, visando aprimorar habilidades técnicas no desenvolvimento Front end com a criação de um site do banco digital Nullbank
 
-### Requisitos do projeto
+### 📄 Requisitos do projeto
 
 O projeto foi desenvolvido conforme os requisitos solicitados pela empresa, porém futuramente poderão ser desenvolvidas as demais páginas do site.
 
