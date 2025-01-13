@@ -13,7 +13,7 @@ O projeto foi desenvolvido conforme os requisitos solicitados pela empresa, por�
 #### Requisitos obrigatórios
 
 - [x] Utilizar apenas HTML, CSS e JS. Não podendo usar bibliotecas externas
-- [x] Os campos de formulário devem ser todos validados com **JavaScript**, isso é válido para todos os campos, não utilizar a validação do HTML.
+- [x] Os campos de formulário devem ser todos validados com **JavaScript**, isso é válido para todos os campos, não utilizar a validação do HTML.
 - [x] Armazene os dados do formulário no LocalStorage.
 - [x] Os botões devem levar para pagina de 404
 - [x] Criação de uma tela de erro, caso o usuário se depare com um erro ao navegar no projeto.
