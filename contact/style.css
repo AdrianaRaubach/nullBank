@@ -267,7 +267,7 @@ form fieldset input, form fieldset textarea {
     text-align: center;
 }
 .shipping-confirmation-display {
-    /* display: none; */
+    display: none;
 }
 .email-client-message {
     color: var(--primary-200-color);

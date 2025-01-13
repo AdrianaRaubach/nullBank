@@ -412,7 +412,7 @@ hr {
 .app-1 {
     display: flex;
     justify-content: space-around;
-    padding: 8% 8% 8% 8%;
+    padding: 8% 5% 8% 5%;
 }
 .information .info img{
     background-color: var(--primary-500-color);
@@ -609,6 +609,7 @@ hr {
    .app-1 .app-column-1 .rectangle-app {
     height: 48vw;
     width: 75vw;
+    }
 }
 @media (max-width: 500px) {
     .options {
@@ -624,5 +625,4 @@ hr {
    .credit-cards .credit-column-1 h3 , .app h3{
     font-size: 30px;
    }
-}
 }

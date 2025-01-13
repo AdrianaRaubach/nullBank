@@ -64,7 +64,7 @@ class Footer extends HTMLElement {
                 flex-direction: column;
                 justify-content: space-between;
             }
-            .information {
+            .section-1 .information {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 20px;
