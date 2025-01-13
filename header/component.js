@@ -39,6 +39,7 @@ class Header extends HTMLElement {
             .nav-icon {
                 position: absolute;
                 right: 64px;
+                top: 15px;
                 display: none;
                 background-color: var(--primary-200-color);
                 border: none;
