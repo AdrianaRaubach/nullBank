@@ -10,7 +10,6 @@ const errorName = document.getElementsByClassName("error-name")
 const listItems = [nameIn, lastNameIn, emailIn, messageIn]
 const confirmation = document.getElementsByClassName("shipping-confirmation")
 const confirmationEmail = document.getElementsByClassName("email-client-message")
-console.log(confirmationEmail)
 
 nameIn.addEventListener("input", function(){
     const regexName = /^[a-záàâãéèêíïóôõöúçñ\s]+$/i
@@ -68,16 +67,16 @@ form1.addEventListener("submit", function(event) {
     
     })
     if(validationPassed) {
-        if (localStorage.cont) {
-            localStorage.cont = Number(localStorage.cont)+1;
+        if (localStorage.count) {
+            localStorage.count = Number(localStorage.count)+1;
         } else {
-            localStorage.cont = 1;
+            localStorage.count = 1;
         }
 
-        localStorage.setItem("id_Client_" + localStorage.cont + " Name:", nameIn.value)
-        localStorage.setItem("id_Client_" + localStorage.cont + " Last Name: ", lastNameIn.value)
-        localStorage.setItem("id_Client_" + localStorage.cont + " Email: ", emailIn.value)
-        localStorage.setItem("id_Client_" + localStorage.cont + " Message: ", messageIn.value)
+        localStorage.setItem("id_Client_" + localStorage.count + " Name:", nameIn.value)
+        localStorage.setItem("id_Client_" + localStorage.count + " Last Name: ", lastNameIn.value)
+        localStorage.setItem("id_Client_" + localStorage.count + " Email: ", emailIn.value)
+        localStorage.setItem("id_Client_" + localStorage.count + " Message: ", messageIn.value)
 
         confirmationEmail[0].innerHTML = emailIn.value
         confirmation[0].classList.remove("shipping-confirmation-display")

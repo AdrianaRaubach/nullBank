@@ -478,6 +478,7 @@ hr {
     justify-content: space-evenly;
     flex: 0.5 1 536px;
     padding: 30px 0px 60px 0px;
+    gap: 16px;
 }
 .app-2 {
     display: flex;
