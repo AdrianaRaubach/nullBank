@@ -139,15 +139,15 @@ class Header extends HTMLElement {
             let access = document.querySelectorAll("header div");
             const navActive = document.querySelector('.nav-active')
             
-                if (navActive) {
-                    nav[0].classList.remove('nav-active');
-                    access[0].classList.remove('nav-active');
-                } else{
-                    nav[0].classList.add('nav-active')
-                    access[0].classList.add('nav-active')
-                }
+            if (navActive) {
+                nav[0].classList.remove('nav-active');
+                access[0].classList.remove('nav-active');
+            } else{
+                nav[0].classList.add('nav-active')
+                access[0].classList.add('nav-active')
+            }
         })
     }
-  }
+}
   
 customElements.define('header-component', Header);
