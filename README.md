@@ -52,7 +52,7 @@ https://github.com/user-attachments/assets/9fb7b283-3146-4d7d-9919-4fb9c8540249
 
 Este projeto foi uma excelente oportunidade para aprimorar habilidades no desenvolvimento Web, como a manipulação do DOM com Javascript e a aplicação de responsividade com CSS flexbox.
 
-Dentre os principais desafios estão a validação do formulário apanas com Javascript e a criação de um menu sanduíche sem a utilização de bibliotecas, o que contribuiu para o aperfeiçoamento com a linguagem JS.
+Dentre os principais desafios estão a validação do formulário apenas com Javascript e a criação de um menu sanduíche sem a utilização de bibliotecas, o que contribuiu para o aperfeiçoamento com a linguagem JS.
 
 
 ## 🙏 Agradecimentos
