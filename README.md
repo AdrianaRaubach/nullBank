@@ -33,9 +33,8 @@ O site possui informações sobre o banco digital Nullbank, benefícios, serviç
 
 ## 📷 Interface
 
-<video controls autoplay>
-  <source src="src/images/tela-nullbank.mp4" type="video/mp4">
-</video>
+
+https://github.com/user-attachments/assets/9fb7b283-3146-4d7d-9919-4fb9c8540249
 
 
 ## 🛠️ Ferramentas
