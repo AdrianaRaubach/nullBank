@@ -224,6 +224,20 @@ hr {
         top: 250px;
     }
 }
+@media (max-width: 425px) {   
+    .abs-item-1 {
+        right: 20px;
+        top: 15px;
+    }
+    .abs-item-2 {
+        left: 20px;
+        top: 120px;
+    }
+    .abs-item-3 {
+        right: 10px;
+        top: 210px;
+    }
+}
 
 @media (min-width: 1230px) {
    
